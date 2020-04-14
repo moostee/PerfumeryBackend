@@ -22,8 +22,8 @@ namespace Services
         {
             
            // logger = _logger;
-            perfumeRepository = _perfumeRepository;
-            utilities = _utilities;
+            _perfumeRepository = perfumeRepository;
+            _utilities = utilities;
             
 
         }
