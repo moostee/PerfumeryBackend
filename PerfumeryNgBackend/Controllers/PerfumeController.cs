@@ -23,7 +23,7 @@ namespace PerfumeryNgBackend.Controllers
         // private readonly string currentUser;
         public PerfumeController(IPerfumeService perfumeService)
         {
-            perfumeService = _perfumeService;
+            _perfumeService = perfumeService;
            // logger = _logger;
            // currentUser = _userIdentity.GetLoggedInUser();
         }
