@@ -20,11 +20,11 @@ namespace Services
 {
     public class Utilities : IUtilities
     {
-        private static readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
         public Utilities(IHttpContextAccessor httpContextAccessor)
         {
-            httpContextAccessor = _httpContextAccessor;
+            _httpContextAccessor = httpContextAccessor;
             // currentUser = _userIdentity.GetLoggedInUser();
         }
 
